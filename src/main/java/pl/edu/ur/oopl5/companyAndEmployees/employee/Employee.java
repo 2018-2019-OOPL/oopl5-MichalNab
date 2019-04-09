@@ -5,6 +5,11 @@ import pl.edu.ur.oopl5.companyAndEmployees.company.abstractClasses.AbstractPerso
 /**
  */
 public class Employee extends AbstractPerson implements EmployeeInterface {
+String Position; 
+    public Employee(String name, String surname, int age, String Position) {
+        super(name, surname, age);
+        this.Position = Position;
+    }
 
     @Override
     public String getName() {
